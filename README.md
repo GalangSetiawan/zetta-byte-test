@@ -1,6 +1,9 @@
 # ZettabyteTest
  
  This project for technical test Zetta byte corp
+- build with prime ng
+- bootstrap
+- lodash
 
 
 
