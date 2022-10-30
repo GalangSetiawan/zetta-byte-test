@@ -1,0 +1,96 @@
+
+<div class="card">
+    <div class="card-header">
+        Table Student
+    </div>
+    <div class="card-body">
+        <form [formGroup]="inputForm">
+            <div class="row">
+                <div class="col" formArrayName="studentFormArray">
+                    <p-table 
+                        #dt2 
+                        [value]="studentFormArray.controls" 
+                        dataKey="_id"
+                        [rows]="10" 
+                        styleClass="p-datatable-sm" responsiveLayout="scroll"
+                        [paginator]="true" 
+                        [totalRecords]="studentFormArray.length"
+                        >
+                        <ng-template pTemplate="caption">
+                            <div class="flex align-items-left">
+                                <p-button icon="pi pi-refresh" (click)="resetData()"></p-button>
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>Student</th>
+                                <th>School Origin</th>
+                                <th>School Correcting</th>
+                                <th>Cross Corrector</th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-rowData let-columns="columns" let-i="rowIndex">
+                            <tr formGroupName="{{i}}">
+                                <td>
+                                    {{rowData.value.student_id.first_name }} {{rowData.value.student_id.last_name }}
+                                </td>
+        
+                                <td>
+                                    {{rowData.value.school_origin_id.short_name}}
+                                </td>
+        
+                                <td>
+                                    <p-dropdown 
+                                        [options]="filterSchoolCorrecting(rowData.value)" 
+                                        formControlName="school_correcting_id" 
+                                        optionValue="school"
+                                        [showClear]="true"
+                                        filterBy="school.short_name != 'SFT 3'"
+                                        placeholder="Select"
+                                        (onChange)="onSchoolCorectingChange(rowData);"
+                                        optionLabel="school.short_name">
+                                    </p-dropdown>
+        
+                                </td>
+        
+                                <td pEditableColumn>
+                                    <p-dropdown 
+                                    [options]="filterCrossConector(rowData.value)" 
+                                    formControlName="school_correcting_corrector_id" 
+                                    optionValue="student_id"
+                                    placeholder="Select"
+                                    [showClear]="true"
+                                    (onChange)="updateData()"
+                                    optionLabel="student_id.first_name">
+                                </p-dropdown>
+                                </td>
+        
+                                
+                            </tr>
+                        </ng-template>
+
+                        <ng-template pTemplate="summary">
+                            {{ studentFormArray.length }} total / {{ totalDataRemainToAssigned }} remain to be assigned
+                        </ng-template>
+                        
+                    </p-table>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+
+
+<br>
+
+
+<div class="card">
+    <div class="card-header">
+        Table School
+    </div>
+    <div class="card-body">
+        <app-table-school></app-table-school>
+    </div>
+</div>

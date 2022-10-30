@@ -1,0 +1,64 @@
+﻿[
+  {
+    "school": {
+      "_id": "5cbe73bd5ae970104463526c",
+      "short_name": "SFT 5 "
+    },
+    "cross_correctors": [
+      {
+        "_id": "60a380a8dc593022ff5ad109",
+        "first_name": "Johan",
+        "last_name": "Cruyff",
+        "full_name": "CRUYFF Johan"
+      }
+    ]
+  },
+  {
+    "school": {
+      "_id": "5c359c407481e90ab279ba6b",
+      "short_name": "SFT 3"
+    },
+    "cross_correctors": [
+      {
+        "_id": "5c36f3353b053422862a2b0b",
+        "first_name": "Alice",
+        "last_name": "ROSSO",
+        "full_name": "ROSSO Alice"
+      }
+    ]
+  },
+  {
+    "school": {
+      "_id": "5c359ae97481e90ab279b969",
+      "short_name": "SFT 1 (School for test)"
+    },
+    "cross_correctors": [
+      {
+        "_id": "5c36f1713b053422862a2835",
+        "first_name": "Roy",
+        "last_name": "BERTRAND",
+        "full_name": "BERTRAND Roy"
+      }
+    ]
+  },
+  {
+    "school": {
+      "_id": "5eba74c5888363308f2e2a36",
+      "short_name": "ZettaSchool"
+    },
+    "cross_correctors": [
+      {
+        "_id": "60a380d5dc593022ff5ad11d",
+        "first_name": "Alan",
+        "last_name": "Walker",
+        "full_name": "WALKER Alan"
+      },
+      {
+        "_id": "60a380ecdc593022ff5ad131",
+        "first_name": "Agung",
+        "last_name": "Hercules",
+        "full_name": "HERCULES Agung"
+      }
+    ]
+  }
+]

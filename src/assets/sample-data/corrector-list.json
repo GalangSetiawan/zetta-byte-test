@@ -1,0 +1,42 @@
+﻿[
+  {
+    "school_correcting_corrector_id": {
+      "_id": "60a380a8dc593022ff5ad109",
+      "civility": "MR",
+      "first_name": "Johan",
+      "last_name": "Cruyff"
+    }
+  },
+  {
+    "school_correcting_corrector_id": {
+      "_id": "5c36f3353b053422862a2b0b",
+      "civility": "MRS",
+      "first_name": "Alice",
+      "last_name": "ROSSO"
+    }
+  },
+  {
+    "school_correcting_corrector_id": {
+      "_id": "60a380d5dc593022ff5ad11d",
+      "civility": "MR",
+      "first_name": "Alan",
+      "last_name": "Walker"
+    }
+  },
+  {
+    "school_correcting_corrector_id": {
+      "_id": "60a380ecdc593022ff5ad131",
+      "civility": "MR",
+      "first_name": "Agung",
+      "last_name": "Hercules"
+    }
+  },
+  {
+    "school_correcting_corrector_id": {
+      "_id": "5c36f1713b053422862a2835",
+      "civility": "MR",
+      "first_name": "Roy",
+      "last_name": "BERTRAND"
+    }
+  }
+]
