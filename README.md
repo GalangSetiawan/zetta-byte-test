@@ -1,4 +1,8 @@
 # ZettabyteTest
+ 
+ This project for technical test Zetta byte corp
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
